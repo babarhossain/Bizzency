@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --FirstFont: 'Ubuntu', sans-serif;
+    --secondFont: 'Open Sans', sans-serif;
+    --ThirdFont: 'Abril Fatface', serif;
+    --mainColor: #0f2f44;
+    --secondColor: #ffc712;
+    --ThirdColor: #8484bf;
+    --FourthColor: #444444;
+
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: var(--FirstFont);
+}
+
+.align-center{
+    align-items: center;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.button{
+    background-color: #8484bf;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    padding: 17px 40px;
+    border-radius: 10px;
+}
+
+/* Header Starts */
+header{
+    background-color: var(--mainColor);
+    color: white;
+    padding: 19px 0;
+    
+}
+
+header .welcome{
+    width: 50%;
+    
+}
+header .open{
+    text-align: right;
+    width: 50%;
+}
+/* Header Ends */
+
+/* Navbar Starts */
+
+nav .logo{
+    width: 30%;
+    
+}
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+
+}
+
+nav .menu ul li{
+    display: inline-block;
+    
+}
+
+nav .menu ul li a{
+    font-weight: 500;
+    color: #222;
+    font-size: 16px;
+    padding: 40px 19px;
+    display: block;
+    transition: 0.04s;
+
+}
+
+nav .menu ul li:hover a{
+    color: var(--secondColor);
+    background-color: #fff9e6;
+
+}
+
+nav .menu ul li span{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+
+}
+
+
+/* Navbar Ends */
+
+/* Banner Starts */
+#banner{
+    background-image: url(../images/Banner.jpg);
+    height: 600px;
+    background-position: center;
+}
+
+.banner-cnt h4{
+    font-weight: 400;
+    font-size: 50px;
+    color: var(--mainColor);
+}
+.banner-cnt h1{
+    font-weight: 400;
+    font-size: 80px;
+    color: var(--mainColor);
+    font-family:var(--ThirdFont);
+    line-height: 85px;
+}
+
+.banner-cnt{
+    width: 40%;
+    padding: 142px 0;
+}
+.banner-cnt h5{
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--ThirdColor);
+    letter-spacing: 15px;
+}
+
+.banner-cnt p{
+    font-size: 14px;
+    color: #444444;
+    font-family: var(--secondFont);
+    margin: 32px 0;
+}
+
+.banner-cnt .button a{
+    color: white;
+}
+
+.banner-cnt .button:hover a{
+    color: var(--mainColor);
+}
+
+
+.banner-cnt span{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #ececec;
+    display: inline-block;
+    text-align: center;
+    line-height: 55px;
+    background-color: #ffffff;
+    margin: 0 20px;
+    color: #8484bf;
+
+}
+
+.banner-cnt .play:hover span{
+    background-color: #0f2f44;
+
+}
+
+/* Banner ends */
+
+/* about starts */
+
+#about{
+    padding: 80px 0;
+    background-color: #f5f4f4;
+}
+#about .about-text{
+    width: 50%;
+    
+}
+#about .about-img{
+    width: 50%;
+    align-items: right;
+   
+}
+
+.about-text p{
+    font-size: 16px;
+    font-family: var(--FirstFont);
+    color: var(--mainColor);
+    font-weight: 300;
+}
+
+.about-text h2{
+    font-size: 32px;
+    font-family: var(--ThirdFont);
+    color: var(--mainColor);
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+
+.about-text .about-parg p{
+    font-size: 16px;
+    font-family: var(--FirstFont);
+    color: var(--mainColor);
+    font-weight: 400;
+}
+
+.about-text ul li{
+    font-size: 16px;
+    font-family: var(--FirstFont);
+    color: var(--mainColor);
+    font-weight: 400;
+    padding: 32px 0;
+    margin-left: 25px;
+
+}
+.about-text .button{
+    background-color: white;
+    margin-left: 10px;
+}
+.about-text .button a{
+    
+    color: var(--mainColor);
+}
+.about-text .button:hover {
+    background-color: var(--secondColor);
+}
+
+/* about ends */
+
+/* skill starts */
+
+#skill{
+    padding: 80px;
+}
+
+#skill .skill-img{
+    width: 30%;
+
+}
+
+#skill .skill-text{
+    width: 50%;
+    margin-left: 130px;
+}
+
+#skill .skill-text{
+    text-align: right;
+}
+
+.skill-text p{
+    font-size: 16px;
+    font-family: var(--FirstFont);
+    color: var(--mainColor);
+    font-weight: 300;
+}
+
+.skill-text h2{
+    font-size: 32px;
+    font-family: var(--ThirdFont);
+    color: var(--mainColor);
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+
+.skill-text .parg p{
+    font-size: 16px;
+    font-family: var(--FirstFont);
+    color: var(--mainColor);
+    font-weight: 400;
+}
+.skill-text .progress img{
+    padding: 35px 0;
+}
+
+/* skill ends */
+
+/* Services starts */
+
+#Services {
+    background-color: #f5f4f4;
+    padding: 80px;
+    
+}
+.Services p{
+    font-size: 16px;
+    font-family: var(--FirstFont);
+    color: var(--mainColor);
+    font-weight: 300;
+}
+
+.Services h2{
+    font-size: 32px;
+    font-family: var(--ThirdFont);
+    color: var(--mainColor);
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+
+.Services{
+    text-align: center;
+
+}
+
+#Services .row{
+    justify-content: space-between;
+}
+.Services_card{
+    
+    width: calc(33.33% - 30px);
+    background-color: #eeeeee;
+    box-shadow: 2px 3px 5px gray;
+    position: relative;
+    
+}
+
+
+.Services_card .icon{
+    width: 30%;
+    text-align: center;
+    
+}
+.Services_card .text{
+    width: 70%;
+    padding: 30px 20px;
+}
+.Services_card .text h3{
+    color: #222222;
+    font-size: 20px;
+    font-family: var(--FirstFont);
+    font-weight: 500;
+}
+
+.Services_card .text p{
+    font-size: 14px;
+    color: #444444;
+    font-family: var(--secondFont);
+    font-weight: 400;
+    margin-top: 28px;
+}
+
+.Services_card .overlay{
+    position: absolute;
+    inset: 0;
+    background-color: var(--mainColor);
+    color: white;
+    text-align: center;
+    padding: 45px;
+    transform: scale(0);
+    transition: 0.35s;
+
+}
+.Services_card .overlay a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--secondColor);
+    text-align: center;
+    color: #222;
+    line-height: 40px;
+    position: absolute;
+    bottom: -20px;
+    left: 30%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.6s;
+    
+}
+
+.Services_card .overlay h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family:var(--FirstFont);
+    padding-top: 15px;
+}
+
+
+.Services_card:hover .overlay{
+    transform: scale(1);
+}
+
+.Services_card:hover .overlay a{
+    left: 50%;
+    opacity: 1;
+}
+
+/* Services ends */
+
+/* Portfolio starts */
+
+#Portfolio{
+    padding: 80px;
+}
+
+.Portfolio_heading{
+    text-align: center;
+}
+
+.Portfolio_heading p{
+    font-size: 16px;
+    font-family: var(--FirstFont);
+    color: var(--mainColor);
+    font-weight: 300;
+}
+
+.Portfolio_heading h2{
+    font-size: 32px;
+    font-family: var(--ThirdFont);
+    color: var(--mainColor);
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+
+.Portfolio_heading .button{
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+    box-shadow: 2px 3px 5px gray;
+    
+    
+}
+
+
+
+#Portfolio .button:hover{
+    background-color: white;
+}
+
+.card{
+    width:33.33%
+    margin-left: 15px;
+    position: relative;
+}
+
+.overlay_one h3{
+    font-family: var(--FirstFont);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: var(--mainColor);
+    
+}
+
+.overlay_one{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    padding: 35px 0;
+    background-color: #ffffff;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.card:hover .overlay_one{
+    transform: scale(1);
+} 
+
+
+/* Portfolio ends */
+
+/* testimonial starts */
+
+#testimonial{
+    background-color: #f5f5f5;
+    padding: 65px 0;
+}
+
+#testimonial .row{
+    justify-content: space-between;
+}
+
+.testimonial p{
+    font-size: 16px;
+    font-family: var(--FirstFont);
+    color: var(--mainColor);
+    font-weight: 300;
+}
+
+.testimonial h2{
+    font-size: 32px;
+    font-family: var(--ThirdFont);
+    color: var(--mainColor);
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+
+.testimonial{
+    text-align: center;
+    
+}
+
+.testimonial_card{
+    width: calc(50% - 15px);
+    background-color: #e9e9e9;
+    box-shadow: 2px 3px 5px gray;
+}
+
+.img{
+    width: 40%;
+}
+.text{
+    width: 60%;
+    padding: 32px 0;
+}
+.text p{
+    font-family: var(--secondFont);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--mainColor);
+    
+}
+
+.text h5{
+    font-family: var(--FirstFont);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--mainColor);
+    padding-top:32px;
+}
+
+
+/* testimonial ends */
+
+/* blog starts  */
+
+#blog{
+    padding: 80px;
+}
+
+.blog_heading{
+    text-align: center;
+}
+.blog_heading p{
+    font-size: 16px;
+    font-family: var(--FirstFont);
+    color: var(--mainColor);
+    font-weight: 300;
+}
+
+.blog_heading h2{
+    font-size: 32px;
+    font-family: var(--ThirdFont);
+    color: var(--mainColor);
+    font-weight: 400;
+    padding-bottom: 32px;
+}
+
+.blog_card{
+    width: 30%;
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+    margin: 0 15px;
+    border-radius: 10px;
+    
+}
+
+.blog_text{
+    padding: 30px 0;
+}
+
+.blog_text p{
+    font-family: var(--FirstFont);
+    font-size: 14px;
+    color: #777777;
+    font-weight: 400;
+    padding-top: 30px 0;
+
+}
+
+.blog_text h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--FirstFont);
+    color: #222222;
+    
+}
+
+.read_button a{
+    font-family: var(--FirstFont);
+    font-size: 16px;
+    color: #777777;
+    font-weight: 500;
+    
+}
+
+.right_arrow a{
+    font-family: var(--FirstFont);
+    font-size: 16px;
+    color: #777777;
+    font-weight: 500;
+    margin-left: 20px;
+    
+}
+
+.blog_card:hover{
+    background-color: var(--mainColor);
+    
+}
+.blog_card:hover p {
+    color: white;
+}
+
+.blog_card:hover h3{
+    color: white;
+}
+.blog_card:hover a{
+    color: white;
+}
+
+#browse{
+    text-align: center;
+    padding: 65px 0;
+}
+
+.browse a{
+    background-color: var(--secondColor);
+    color: #222222;
+    box-shadow: 2px 3px 5px gray;
+}
+
+.browse:hover a{
+    background-color:#f5f5f5;
+    color: var(--mainColor);
+}
+
+/* blog ends  */
